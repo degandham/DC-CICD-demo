@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def sample():
-    return 'Welcome to Deloitte Cloud CICD Demo!'
+    return "<h2 style='color:blue'>Welcome to Deloitte Cloud CICD Demo!</h2>"
 
 if __name__ == '__main__':
     app.run()
