@@ -3,13 +3,15 @@ pipeline {
     node {
       label 'master'
     }
-    
+    environment {
+      BUILD_VERSION = "env.${BUILD_ID}"
+    }
   }
   stages {
     stage('DEV') {
       steps {
         git(url: 'https://github.com/degandham/DC-CICD-demo', branch: 'master', changelog: true, poll: true)
-        currentBuild.displayName == "1.0.${BUILD_ID}"
+        echo '${BUILD_VERSION}'
         echo 'Build the Docker Image of the Demo application'
       }
     }
