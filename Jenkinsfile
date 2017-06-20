@@ -3,9 +3,9 @@ pipeline {
     node {
       label 'master'
     }
-    environment {
-      BUILD_VERSION = "env.${BUILD_ID}"
-    }
+  }
+  environment {
+     BUILD_VERSION = "env.${BUILD_ID}"
   }
   stages {
     stage('DEV') {
