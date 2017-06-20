@@ -31,7 +31,7 @@ pipeline {
     stage('PROD') {
       steps {
         echo 'Create AWS ECS "PROD" Environment'
-        echo 'Deploy Docker Image to PROD Environment'
+        echo 'Deploy Docker Image to the PROD Environment'
         echo 'Run Selenium Functional Tests in the PROD Environment'
       }
     }
