@@ -8,7 +8,6 @@ pipeline {
     stage('DEV') {
       steps {
         git(url: 'https://github.com/degandham/DC-CICD-demo', branch: 'master', changelog: true, poll: true)
-        echo 'env.${BUILD_NUMBER}'
         echo 'Build the Docker Image of the Demo application'
       }
     }
