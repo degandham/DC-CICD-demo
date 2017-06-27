@@ -1,7 +1,5 @@
-import os
-from flask import Flask
 
-app.config.from_object(os.environ['DEMO_ENV_TYPE'])
+from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
