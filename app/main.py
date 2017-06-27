@@ -5,9 +5,5 @@ app = Flask(__name__)
 def sample():
     return "<body style='background-color:red;'><p style='text-align:center'><font face='verdana' color='black' size='6'>Deloitte Cloud Demo Client Web App</p></font></body>"
 
-@app.route("/")
-def samplee():
-    return "Welcome!"
-
 if __name__ == '__main__':
     app.run()
